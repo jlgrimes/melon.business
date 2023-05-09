@@ -63,12 +63,13 @@ export const HomePage = () => {
                   of pokestats.live in 5 hours? Well, he didn't.`}
                 </Text>
               </Stack>
-              <Text
-                color='white'
-                fontSize='lg'
-              >{`And that's everyone - give it up for our amazing team!`}</Text>
             </Stack>
           </HomePageSection>
+          <Box padding={4} display='flex' justifyContent='center'>
+            <Heading size='sm' color='white'>
+              Copyright 2023 melon LLC. I think idk
+            </Heading>
+          </Box>
         </>
       </ParallaxContainer>
     </Box>
