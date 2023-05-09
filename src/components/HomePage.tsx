@@ -13,7 +13,7 @@ export const HomePage = () => {
         <Stack spacing={1}>
           <Heading size='2xl'>Our Mission</Heading>
           <Heading size='xl' color='gray.500'>
-            melon
+            melon.
           </Heading>
         </Stack>
       </Stack>
