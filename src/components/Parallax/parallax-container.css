@@ -1,0 +1,16 @@
+.parallax-container {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: 'touch';
+  perspective: 2px;
+  perspective-origin: 0 0;
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.parallax-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
