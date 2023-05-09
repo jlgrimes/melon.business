@@ -1,7 +1,15 @@
-import { Box, Container, Heading, Stack, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  Link,
+  Stack,
+  Text,
+} from '@chakra-ui/react';
 import { HomePageSection } from './HomePageSection';
-import { ParallaxChild } from './Parallax/ParallaxChild';
 import { ParallaxContainer } from './Parallax/ParallaxContainer';
+import { HiChevronDoubleDown } from 'react-icons/hi';
 
 export const HomePage = () => {
   return (
@@ -16,9 +24,19 @@ export const HomePage = () => {
               <Heading size='xl' color='white'>
                 Melon Business.
               </Heading>
+              <Button
+                variant='unstyled'
+                size='xs'
+                leftIcon={<HiChevronDoubleDown />}
+                color='white'
+                as={Link}
+                href='#what-we-do'
+              >
+                {`Let's go!`}
+              </Button>
             </Stack>
           </HomePageSection>
-          <HomePageSection color='#e76f51'>
+          <HomePageSection color='#e76f51' id='what-we-do'>
             <Stack spacing={8}>
               <Heading size='2xl' color='white'>
                 What we do
@@ -65,7 +83,12 @@ export const HomePage = () => {
               </Stack>
             </Stack>
           </HomePageSection>
-          <Box padding={4} display='flex' justifyContent='center'>
+          <Box
+            padding={4}
+            display='flex'
+            justifyContent='center'
+            backgroundColor={'#2a9d8f'}
+          >
             <Heading size='sm' color='white'>
               Copyright 2023 melon LLC. I think idk
             </Heading>

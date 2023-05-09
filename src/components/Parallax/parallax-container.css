@@ -3,6 +3,7 @@
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: 'touch';
   perspective: 2px;
   perspective-origin: 0 0;
