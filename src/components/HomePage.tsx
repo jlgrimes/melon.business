@@ -3,13 +3,18 @@ import {
   Button,
   Container,
   Heading,
+  HStack,
+  Icon,
   Link,
   Stack,
+  Stat,
+  StatLabel,
+  StatNumber,
   Text,
 } from '@chakra-ui/react';
 import { HomePageSection } from './HomePageSection';
 import { ParallaxContainer } from './Parallax/ParallaxContainer';
-import { HiChevronDoubleDown } from 'react-icons/hi';
+import { HiChevronDoubleDown, HiOutlineExternalLink } from 'react-icons/hi';
 
 export const HomePage = () => {
   return (
@@ -21,7 +26,7 @@ export const HomePage = () => {
               <Heading size='3xl' color='white'>
                 melon 🍈
               </Heading>
-              <Heading size='lg' color='white'>
+              <Heading size='md' color='white'>
                 Melon business.
               </Heading>
               <Box>
@@ -39,10 +44,10 @@ export const HomePage = () => {
               </Box>
             </Stack>
           </HomePageSection>
-          <HomePageSection color='green.500' id='what-we-do'>
-            <Stack spacing={10}>
+          <HomePageSection color='green.400' id='what-we-do'>
+            <Stack spacing={8}>
               <Heading size='xl' color='white'>
-                What Do
+                What We Do
               </Heading>
               <Stack>
                 <Heading size='lg' color='white'>
@@ -70,10 +75,42 @@ export const HomePage = () => {
               </Stack>
             </Stack>
           </HomePageSection>
-          <HomePageSection color='#e76f51'>
-            <Stack spacing={10}>
+          <HomePageSection color='green.500'>
+            <Stack spacing={8}>
               <Heading size='xl' color='white'>
-                Our Team
+                Our Products
+              </Heading>
+              <Stack spacing='4'>
+                <Heading
+                  size='lg'
+                  color='white'
+                  as={Link}
+                  href='https://pokestats.live'
+                  isExternal
+                >
+                  pokestats.live
+                  <Icon ml='1' as={HiOutlineExternalLink} fontSize='18' />
+                </Heading>
+                <Text color='white' fontSize='lg'>
+                  {`Live Pokémon TCG tournament data and analytics, comprehensive post-game tournament analysis, and record tracking for competitors across tournaments.`}
+                </Text>
+                <HStack color='white'>
+                  <Stat>
+                    <StatNumber>250,000+</StatNumber>
+                    <StatLabel>Monthly Page Views</StatLabel>
+                  </Stat>
+                  <Stat>
+                    <StatNumber>38,000+</StatNumber>
+                    <StatLabel>Monthly Visitors</StatLabel>
+                  </Stat>
+                </HStack>
+              </Stack>
+            </Stack>
+          </HomePageSection>
+          <HomePageSection color='#e76f51'>
+            <Stack spacing={8}>
+              <Heading size='xl' color='white'>
+                The Team
               </Heading>
               <Stack spacing='4'>
                 <Stack spacing='0'>
@@ -94,7 +131,7 @@ export const HomePage = () => {
             padding={4}
             display='flex'
             justifyContent='center'
-            backgroundColor={'gray.800'}
+            backgroundColor={'gray.700'}
           >
             <Heading size='sm' color='white'>
               Copyright 2023 melon LLC. I think idk
