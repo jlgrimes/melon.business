@@ -22,7 +22,7 @@ export const HomePageSection = (props: HomePageSectionProps) => {
 
   return (
     <Box backgroundColor={color}>
-      <Container paddingY='12' {...containerProps}>
+      <Container paddingY='10' {...containerProps}>
         {children}
       </Container>
     </Box>

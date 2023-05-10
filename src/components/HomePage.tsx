@@ -21,28 +21,31 @@ export const HomePage = () => {
               <Heading size='3xl' color='white'>
                 melon 🍈
               </Heading>
-              <Heading size='xl' color='white'>
-                Melon Business.
+              <Heading size='lg' color='white'>
+                Melon business.
               </Heading>
-              <Button
-                variant='unstyled'
-                size='xs'
-                leftIcon={<HiChevronDoubleDown />}
-                color='white'
-                as={Link}
-                href='#what-we-do'
-              >
-                {`Let's go!`}
-              </Button>
+              <Box>
+                <Button
+                  variant='unstyled'
+                  size='xs'
+                  leftIcon={<HiChevronDoubleDown />}
+                  color='white'
+                  onClick={() => {
+                    document.getElementById('what-we-do')?.scrollIntoView();
+                  }}
+                >
+                  {`Andiamo!`}
+                </Button>
+              </Box>
             </Stack>
           </HomePageSection>
-          <HomePageSection color='#e76f51' id='what-we-do'>
-            <Stack spacing={8}>
-              <Heading size='2xl' color='white'>
-                What we do
+          <HomePageSection color='green.500' id='what-we-do'>
+            <Stack spacing={10}>
+              <Heading size='xl' color='white'>
+                What Do
               </Heading>
               <Stack>
-                <Heading size='xl' color='white'>
+                <Heading size='lg' color='white'>
                   Make apps you actually want.
                 </Heading>
                 <Text color='white' fontSize='lg'>
@@ -50,7 +53,7 @@ export const HomePage = () => {
                 </Text>
               </Stack>
               <Stack>
-                <Heading size='xl' color='white'>
+                <Heading size='lg' color='white'>
                   Fix real problems.
                 </Heading>
                 <Text color='white' fontSize='lg'>
@@ -58,7 +61,7 @@ export const HomePage = () => {
                 </Text>
               </Stack>
               <Stack>
-                <Heading size='xl' color='white'>
+                <Heading size='lg' color='white'>
                   Fix my whoopsie.
                 </Heading>
                 <Text color='white' fontSize='lg'>
@@ -67,18 +70,22 @@ export const HomePage = () => {
               </Stack>
             </Stack>
           </HomePageSection>
-          <HomePageSection color='#2a9d8f'>
-            <Stack spacing={8}>
-              <Heading size='2xl' color='white'>
+          <HomePageSection color='#e76f51'>
+            <Stack spacing={10}>
+              <Heading size='xl' color='white'>
                 Our Team
               </Heading>
-              <Stack>
-                <Heading size='xl' color='white'>
-                  CEO - Jared Grimes
-                </Heading>
+              <Stack spacing='4'>
+                <Stack spacing='0'>
+                  <Heading size='lg' color='white'>
+                    CEO
+                  </Heading>
+                  <Heading size='md' color='white'>
+                    Jared Grimes
+                  </Heading>
+                </Stack>
                 <Text color='white' fontSize='lg'>
-                  {`This guy is awesome. Did you know that he coded the entirety
-                  of pokestats.live in 5 hours? Well, he didn't.`}
+                  {`Jared is an experienced front-end software engineer at Microsoft. He likes to code in his free time, for some reason.`}
                 </Text>
               </Stack>
             </Stack>
@@ -87,7 +94,7 @@ export const HomePage = () => {
             padding={4}
             display='flex'
             justifyContent='center'
-            backgroundColor={'#2a9d8f'}
+            backgroundColor={'gray.800'}
           >
             <Heading size='sm' color='white'>
               Copyright 2023 melon LLC. I think idk
