@@ -13,7 +13,7 @@ export const HomePageSection = (props: HomePageSectionProps) => {
 
   const containerProps = {
     ...rest,
-    ...(isFullHeight ? { height: '100vh' } : { height: 'auto' }),
+    ...(isFullHeight ? { height: '50vh' } : { height: 'auto' }),
   };
 
   if (props.isParallax) {
@@ -22,7 +22,7 @@ export const HomePageSection = (props: HomePageSectionProps) => {
 
   return (
     <Box backgroundColor={color}>
-      <Container paddingY='10' {...containerProps}>
+      <Container maxW='container.md' paddingY='10' {...containerProps}>
         {children}
       </Container>
     </Box>
