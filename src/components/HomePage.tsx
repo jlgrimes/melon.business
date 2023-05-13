@@ -19,7 +19,7 @@ import { HiChevronDoubleDown, HiOutlineExternalLink } from 'react-icons/hi';
 export const HomePage = () => {
   return (
     <Box backgroundColor='#f4a261'>
-      <ParallaxContainer>
+      {/* <ParallaxContainer> */}
         <>
           <HomePageSection>
             <Stack>
@@ -114,7 +114,7 @@ export const HomePage = () => {
             </Heading>
           </Box>
         </>
-      </ParallaxContainer>
+      {/* </ParallaxContainer> */}
     </Box>
   );
 };

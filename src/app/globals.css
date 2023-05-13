@@ -86,7 +86,15 @@ body {
   max-height: 100vh;
   margin: 0;
   background: #f4a261;
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 
 body {
   color: rgb(var(--foreground-rgb));
