@@ -85,7 +85,7 @@ body {
   overflow-x: hidden;
   max-height: 100vh;
   margin: 0;
-  background: #f4a261;
+  background-color: #f4a261;
 
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
