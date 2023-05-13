@@ -22,7 +22,7 @@ export const HomePage = () => {
       {/* <ParallaxContainer> */}
         <>
           <HomePageSection>
-            <Stack>
+            <Stack paddingY={12}>
               <Heading size='4xl' color='white'>
                 melon 🍈
               </Heading>
